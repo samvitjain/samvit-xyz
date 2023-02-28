@@ -1,0 +1,339 @@
+'
+<html lang="en">
+  <head>
+    <title>Invoice</title>
+    <meta charset="utf-8" />
+    <style>
+      @page {
+        margin: 4mm 0 4mm 0;
+        size: portrait;
+      }
+      html {
+        -webkit-print-color-adjust: exact;
+      }
+      body {
+        width: 100%;
+        padding: 1%;
+        height: 100%;
+        font-size: 12px;
+        color: rgb(33, 33, 33);
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 500;
+        letter-spacing: 2px;
+      }
+      .align {
+        text-align: right;
+      }
+      td {
+        /* border: 1px solid black; */
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        justify-content: flex-end;
+        gap: 25%;
+        margin-top: 5px;
+        margin-right: 5%;
+      "
+    >
+      <div>Tax Invoice</div>
+      <div>E-Way bill no To :</div>
+      <div>Page: 1/1</div>
+      <div>TEST 2</div>
+    </div>
+    <div style="margin-top: 20px">S-355, Foy Sagar Road kohima - 122018</div>
+    <div
+      style="
+        display: flex;
+        gap: 5px;
+        justify-content: space-around;
+        margin-top: 10px;
+      "
+    >
+      <table>
+        <tr>
+          <td>PHONE NO</td>
+          <td>:</td>
+          <td>7897654567</td>
+        </tr>
+        <tr>
+          <td>GSTIN NO</td>
+          <td>:</td>
+          <td>27AAFCE8947A1ZL</td>
+        </tr>
+        <tr>
+          <td>RS PAN NO</td>
+          <td>:</td>
+          <td>AAFCE8947A</td>
+        </tr>
+        <tr>
+          <td>Salesman Name</td>
+          <td>:</td>
+          <td>Stockist Mridul</td>
+        </tr>
+        <tr>
+          <td>Region-State Code</td>
+          <td>:</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Beat Name</td>
+          <td>:</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>HUL STORE ID</td>
+          <td>:</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Vehicle Name</td>
+          <td>:</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>FSSAI No</td>
+          <td>:</td>
+          <td>46654634352457</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td>Invoice No</td>
+          <td>:</td>
+          <td>IN-1050257</td>
+        </tr>
+        <tr>
+          <td>Invoice Date</td>
+          <td>:</td>
+          <td>24 Feb 2023, 10:44 am</td>
+        </tr>
+        <tr>
+          <td>Retailer Name</td>
+          <td>:</td>
+          <td>Shri Radhy Cosmetics</td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td>:</td>
+          <td>&#x27;D 1,39/40 Sec-11 Rohini</td>
+        </tr>
+        <tr>
+          <td>Phone No</td>
+          <td>:</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Retailer PAN No</td>
+          <td>:</td>
+          <td>KOLPIM3658</td>
+        </tr>
+        <tr>
+          <td>GSTIN NO</td>
+          <td>:</td>
+          <td>23KOLPM7832B648</td>
+        </tr>
+        <tr>
+          <td>Region-StateCode</td>
+          <td>:</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Time of Billing</td>
+          <td>:</td>
+          <td>24 Feb 2023, 10:44 am</td>
+        </tr>
+      </table>
+    </div>
+    <div style="width: 100%; border-top: 2px dashed black"></div>
+    <div>
+      <div style="display: flex; flex-direction: column">
+        <div style="display: flex; flex-direction: row">
+          <div style="display: flex; flex: 0 1 3%">SL NO</div>
+          <div style="display: flex; flex: 0 1 8%">HSN</div>
+          <div style="display: flex; flex: 0 1 10%">MRP</div>
+          <div style="display: flex; flex: 0 1 15%">Batch Units Code</div>
+          <div style="display: flex; flex: 0 1 7%">Free Qty</div>
+          <div style="display: flex; flex: 0 1 7%">Base Rate</div>
+          <div style="display: flex; flex: 0 1 7%">Disc 1</div>
+          <div style="display: flex; flex: 0 1 6%">Disc 2</div>
+          <div style="display: flex; flex: 0 1 10%">Taxable Amt</div>
+          <div style="display: flex; flex: 0 1 10%">CGST Amt</div>
+          <div style="display: flex; flex: 0 1 10%">S/UTGST Amt</div>
+          <div style="display: flex; flex: 0 1 12%">Net Amount</div>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row">
+        <div style="display: flex; flex: 0 1 3%"></div>
+        <div style="display: flex; flex: 0 1 72%">Item Name</div>
+        <div style="display: flex; flex: 0 1 10%">CGST Tax%</div>
+        <div style="display: flex; flex: 0 1 10%">S/UTGST Tax%</div>
+        <div style="display: flex; flex: 0 1 12%"></div>
+      </div>
+    </div>
+    <div style="width: 100%; border-top: 2px dashed black"></div>
+    <div style="margin-bottom: 8px">
+      <div style="display: flex; flex-direction: row">
+        <div class="align" style="display: flex; flex: 0 1 3%">1</div>
+        <div class="align" style="display: flex; flex: 0 1 8%">33061020</div>
+        <div class="align" style="display: flex; flex: 0 1 10%">45</div>
+        <div class="align" style="display: flex; flex: 0 1 15%"></div>
+        <div class="align" style="display: flex; flex: 0 1 7%">0</div>
+        <div class="align" style="display: flex; flex: 0 1 7%">41</div>
+        <div class="align" style="display: flex; flex: 0 1 7%">0</div>
+        <div class="align" style="display: flex; flex: 0 1 6%">12.06</div>
+        <div class="align" style="display: flex; flex: 0 1 10%">68.3</div>
+        <div class="align" style="display: flex; flex: 0 1 10%"></div>
+        <div class="align" style="display: flex; flex: 0 1 10%"></div>
+        <div class="align" style="display: flex; flex: 0 1 12%">68.3</div>
+      </div>
+      <div style="display: flex; flex-direction: row">
+        <div class="align" style="display: flex; flex: 0 1 3%"></div>
+        <div class="align" style="display: flex; flex: 0 1 72%">
+          RIO SANITARY NAPKINS XLARGE COTTONY COVER 6&#x27;S X 72 C
+        </div>
+        <div class="align" style="display: flex; flex: 0 1 10%">0</div>
+        <div class="align" style="display: flex; flex: 0 1 10%">0</div>
+        <div class="align" style="display: flex; flex: 0 1 12%"></div>
+      </div>
+    </div>
+    <div style="margin-bottom: 8px">
+      <div style="display: flex; flex-direction: row">
+        <div class="align" style="display: flex; flex: 0 1 3%">2</div>
+        <div class="align" style="display: flex; flex: 0 1 8%">33061020</div>
+        <div class="align" style="display: flex; flex: 0 1 10%">29</div>
+        <div class="align" style="display: flex; flex: 0 1 15%"></div>
+        <div class="align" style="display: flex; flex: 0 1 7%">0</div>
+        <div class="align" style="display: flex; flex: 0 1 7%">23.07</div>
+        <div class="align" style="display: flex; flex: 0 1 7%">0</div>
+        <div class="align" style="display: flex; flex: 0 1 6%">3.36</div>
+        <div class="align" style="display: flex; flex: 0 1 10%">19.02</div>
+        <div class="align" style="display: flex; flex: 0 1 10%"></div>
+        <div class="align" style="display: flex; flex: 0 1 10%"></div>
+        <div class="align" style="display: flex; flex: 0 1 12%">19.02</div>
+      </div>
+      <div style="display: flex; flex-direction: row">
+        <div class="align" style="display: flex; flex: 0 1 3%"></div>
+        <div class="align" style="display: flex; flex: 0 1 72%">
+          RIO SANITARY NAPKINS REGULAR (230MM) COMFORT WEAVE 7&#x27;S X 72 C
+        </div>
+        <div class="align" style="display: flex; flex: 0 1 10%">0</div>
+        <div class="align" style="display: flex; flex: 0 1 10%">0</div>
+        <div class="align" style="display: flex; flex: 0 1 12%"></div>
+      </div>
+    </div>
+    <div>
+      <div
+        style="width: 100%; border-top: 2px dashed black; margin-top: 10px"
+      ></div>
+      <div>
+        <div style="display: flex; flex-direction: row">
+          <div class="align" style="display: flex; flex: 0 1 11%">Total :</div>
+          <!-- <div class="align" style="display: flex; flex: 0 1 8%">30049069</div> -->
+          <div class="align" style="display: flex; flex: 0 1 10%"></div>
+          <div class="align" style="display: flex; flex: 0 1 15%">A22093</div>
+          <div class="align" style="display: flex; flex: 0 1 7%">0</div>
+          <div class="align" style="display: flex; flex: 0 1 7%"></div>
+          <div class="align" style="display: flex; flex: 0 1 7%">0.00</div>
+          <div class="align" style="display: flex; flex: 0 1 6%">15.42</div>
+          <div class="align" style="display: flex; flex: 0 1 10%">87.32</div>
+          <div class="align" style="display: flex; flex: 0 1 10%"></div>
+          <div class="align" style="display: flex; flex: 0 1 10%"></div>
+          <div class="align" style="display: flex; flex: 0 1 12%">87.32</div>
+        </div>
+      </div>
+      <div style="width: 100%; border-top: 2px dashed black"></div>
+      <div
+        style="
+          display: flex;
+          align-items: flex-end;
+          flex-direction: column;
+          margin-right: 6%;
+        "
+      >
+        <table>
+          <tbody style="text-align: end">
+            <tr>
+              <td>Other Disc</td>
+              <td>:</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Credit Adj</td>
+              <td>:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Debit Adj</td>
+              <td>:</td>
+              <td></td>
+            </tr>
+            <tr style="font-weight: bold">
+              <td>Bill Amount</td>
+              <td>:</td>
+              <td>₹ 87.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="font-weight: bold; margin-top: -15px">
+        Eighty Seven Rupees
+      </div>
+      <div style="font-weight: bold">GST Tax Summary</div>
+      <div style="width: 100%; border-top: 2px dashed black"></div>
+      <div style="display: flex; flex-direction: row; width: 80%">
+        <div style="display: flex; flex: 0 1 20%">CGST %</div>
+        <div style="display: flex; flex: 0 1 20%">CGST Value</div>
+        <div style="display: flex; flex: 0 1 20%">SGST/UTGST %</div>
+        <div style="display: flex; flex: 0 1 20%">SGST/UTGST Value</div>
+        <div style="display: flex; flex: 0 1 20%">GST Taxable Value</div>
+      </div>
+      <div style="width: 100%; border-top: 2px dashed black"></div>
+      <div style="display: flex; flex-direction: row; width: 80%">
+        <div style="display: flex; flex: 0 1 20%"></div>
+        <div style="display: flex; flex: 0 1 20%"></div>
+        <div style="display: flex; flex: 0 1 20%"></div>
+        <div style="display: flex; flex: 0 1 20%"></div>
+        <div style="display: flex; flex: 0 1 20%">105.07</div>
+      </div>
+      <div style="width: 100%; border-top: 2px dashed black"></div>
+      <div style="display: flex; flex-direction: row; width: 80%">
+        <div style="display: flex; flex: 0 1 20%">Total :</div>
+        <div style="display: flex; flex: 0 1 20%"></div>
+        <div style="display: flex; flex: 0 1 20%"></div>
+        <div style="display: flex; flex: 0 1 20%"></div>
+        <div style="display: flex; flex: 0 1 20%">105.07</div>
+      </div>
+      <div>Total Discount/scheme amt pass on the Bill: 0.00</div>
+      <div>
+        Total Discount/schemes amt passed to you from HUL for the Period
+        21/12/2022 to 09/01/2023:18087.37
+      </div>
+      <div style="max-width: fit-content">
+        "I / We hereby certify that articles of food mentioned in the invoice
+        are warranted to be of the nature and quantity which they purport to be
+        as per the Food Safety and Standard Act & Rules."
+      </div>
+      <div style="max-width: fit-content">
+        "This is a computer generated or electronic invoice as per IT Act 2000
+        and not required to bear a signature of digital signature as per GST
+        Notification No. 74/2018-Central tax dated 31 December 2018"
+      </div>
+      <div style="margin-top: 10px">KSD</div>
+      <br />
+      <img
+        alt="siganture_image"
+        src=""
+        style="height: 30px; width: 80px; margin-left: 30px"
+      />
+      <br />
+      <div style="margin-top: 10px">Authorized Signature</div>
+      <div style="width: 100%; border-top: 2px dashed black"></div>
+    </div>
+  </body>
+</html>
+'

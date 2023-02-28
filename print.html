@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Matrix Test</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/print-js/dist/print.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/print-js/dist/print.min.js"></script>
+    <style>
+      #print-button-1 {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        background-color: #008cba;
+        color: white;
+        cursor: pointer;
+      }
+      #print-button-2 {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        background-color: #008cba;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <button id="print-button-1">Print Test 1 (HTML)</button>
+    <br />
+    <br />
+    <button id="print-button-2">Print Test 2 (LibrePDF)</button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <script>
+      document
+        .getElementById("print-button-1")
+        .addEventListener("click", function () {
+          window.open("https://samvit.xyz/test1.html", "_blank");
+        });
+      document
+        .getElementById("print-button-2")
+        .addEventListener("click", function () {
+          const pdfUrl = "https://samvit.xyz/test2.pdf";
+          printJS(pdfUrl, "pdf");
+          setTimeout(() => {
+            const isPrinting = printJS({
+              printable: pdfUrl,
+              type: "pdf",
+              onPrintDialogClose: () => {
+                console.log("Print dialog closed");
+              },
+              onError: (err) => {
+                console.error("Printing failed:", err);
+              },
+            });
+            if (!isPrinting) {
+              console.warn(
+                "Printing may have failed due to browser popup blocking"
+              );
+            }
+          }, 500);
+        });
+    </script>
+  </body>
+</html>
