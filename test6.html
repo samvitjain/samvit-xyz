@@ -4,9 +4,11 @@
     <title>Invoice</title>
     <meta charset="utf-8" />
     <style>
-      @page {
-        margin: 4mm 0 4mm 0;
-        size: portrait;
+      @media print {
+        @page {
+          size: 12in 11in;
+          margin: 1in;
+        }
       }
       html {
         width: 12in;
